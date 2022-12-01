@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+   
+}
+
+body{
+    /*El fondo blanco será sustituido por el color #161717*/
+    background-color: #161717;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+    color: white;   /* Los textos tendrán un color blanco*/
+}
+
+.btns {
+    align-self: start;
+    display: flex;
+    gap: 20px;
+}
+
+
+.googlebtn {
+    background-color: #1A73EB;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.googlebtn:hover{
+    opacity: 0.76;
+}
+
+.googlebtn picture{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.googlebtn picture img{
+    width: 75%;
+}
+
+.googlebtn span {
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.twitterbtn {
+    color: #ccc;
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.twitterbtn picture{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitterbtn picture img{
+    width: 70%;
+}
+
+.twitterbtn:hover {
+    background-color: #ddd;
+}
+
+
+/* div separador y hr lineas separador*/
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+flex-grow: 1;
+border: none;
+border-top: 1px solid #ccc ;
+}
+
+.separator span {
+    color: #bbb;
+}
+
+/* //// */
+
+/* labels e inputs*/
+
+/* inputs Nombre y Username*/
+.sectinputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+/* /// */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+ 
+
+}
+
+
+/* todos los label */
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+/* todos los span dentro de los labels */
+label span {
+    font-weight: 700;
+}
+
+/* inputs de los username y nombre */
+.sectinputs label input {
+    width: 80%;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+/* todos los inputs de todos los labels*/
+label input {
+    width: 90%;
+    /* El fondo de los inputs tendrá un color #212121*/
+    background-color: #212121;
+    /* Hecho */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+/* todos  estdados de los inputs de todos los labels*/
+label input:hover {
+    /* El fondo de los inputs cuando se hace hover será del color #454045*/
+    background-color: #454045;  
+    /* Hecho*/
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #fa2fc069;
+}
+
+/* los inputs de todos los labels*/
+label input:focus {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #fa2fc069;
+}
+
+
+/* los checkboxs*/
+.checklabel {
+    display: flex;
+    flex-direction: row;
+}
+
+.checklabel input[type="checkbox"] {
+    width: 20px;
+}
+
+.checklabel span{
+    font-weight: 400;
+}
+
+
+/* el boton CallToAction*/
+.submitbtn {
+    background-color: #EA4C89;
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.submitbtn:hover {
+    opacity: 0.75;
+}
